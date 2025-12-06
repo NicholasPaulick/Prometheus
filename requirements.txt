@@ -1,0 +1,13 @@
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+
+# Optional but recommended for better performance
+# Uncomment if needed:
+# triton>=2.0.0  # For optimized kernels
+# flash-attn>=2.0.0  # For flash attention (requires CUDA)
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# flake8>=6.0.0
