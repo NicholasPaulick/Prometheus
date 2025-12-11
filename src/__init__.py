@@ -17,7 +17,7 @@ Memory Types (from Miras framework):
 - memora: Simplex constraint (probability memory)
 
 Example:
-    >>> from titans import TitansLM, TitansConfig
+    >>> from src import TitansLM, TitansConfig
     >>> 
     >>> # Create a MAC model with Yaad memory
     >>> config = TitansConfig(
@@ -29,7 +29,7 @@ Example:
     >>> model = TitansLM(config)
     >>> 
     >>> # Or use factory functions
-    >>> from titans import create_mac_model, create_yaad_model
+    >>> from src import create_mac_model, create_yaad_model
     >>> model = create_mac_model(dim=256, num_layers=4)
     >>> model = create_yaad_model(architecture='mag', dim=512)
 """

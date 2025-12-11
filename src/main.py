@@ -17,15 +17,15 @@ import os
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from titans.memory import (
+from src.memory import (
     NeuralMemory, YaadMemory, MonetaMemory, MemoraMemory,
     LinearMemory, MLPMemory,
     L2AttentionalBias, HuberAttentionalBias, LpAttentionalBias
 )
-from titans.mac import MemoryAsContextTransformer, MemoryAsContextLM
-from titans.mag import MemoryAsGateTransformer, MemoryAsGateLM, SlidingWindowAttention
-from titans.mal import MemoryAsLayerTransformer, MemoryAsLayerLM
-from titans.model import TitansLM, TitansConfig, create_mac_model, create_mag_model, create_mal_model
+from src.mac import MemoryAsContextTransformer, MemoryAsContextLM
+from src.mag import MemoryAsGateTransformer, MemoryAsGateLM, SlidingWindowAttention
+from src.mal import MemoryAsLayerTransformer, MemoryAsLayerLM
+from src.model import TitansLM, TitansConfig, create_mac_model, create_mag_model, create_mal_model
 
 
 def test_linear_memory():
